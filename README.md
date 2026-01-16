@@ -1,0 +1,11 @@
+
+  # High-End NGO Website Design
+
+  This is a code bundle for High-End NGO Website Design. The original project is available at https://www.figma.com/design/05MzVJpHMUGeDwLKvnGoEu/High-End-NGO-Website-Design.
+
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  
