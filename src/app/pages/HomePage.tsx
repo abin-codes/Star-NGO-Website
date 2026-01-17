@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { Heart, Scale, TrendingUp, Shield, ArrowRight, Home, Users } from 'lucide-react';
 import starngologo from '../../assets/starngologo.png';
-import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
+import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 interface HomePageProps {
   onNavigate: (page: string) => void;
@@ -38,7 +38,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 className="inline-block px-4 py-2 bg-[#C4A661]/10 rounded-full mb-6"
               >
                 <span className="text-sm font-bold text-[#C4A661] tracking-wider uppercase">
-                  Est. 2026 · Ernakulam, Kerala
+                  Est. 2025 · Ernakulam, Kerala
                 </span>
               </motion.div>
 
@@ -332,12 +332,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <div className="space-y-16">
               {[
                 {
-                  year: '2026',
+                  year: '2025',
                   title: 'Foundation',
                   description: 'STAR established in Ernakulam with a vision to create lasting change'
                 },
                 {
-                  year: '2026',
+                  year: '2025',
                   title: 'Official Registration',
                   description: 'Registered under Kerala Societies Registration Act, 1860'
                 },

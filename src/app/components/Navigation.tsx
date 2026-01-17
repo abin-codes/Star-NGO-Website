@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import starngologo from '../../assets/starngologo.png';
+import starngologo from '../../assets/starngologo1.png';
 
 interface NavigationProps {
   currentPage: string;

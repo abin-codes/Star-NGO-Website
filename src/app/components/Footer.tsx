@@ -1,5 +1,5 @@
 import { Facebook, Twitter, Instagram, Linkedin, Mail } from 'lucide-react';
-import starngologo from '../../assets/starngologo.png';
+import starngologo from '../../assets/starngologo1.png';
 
 interface FooterProps {
   onNavigate: (page: string) => void;

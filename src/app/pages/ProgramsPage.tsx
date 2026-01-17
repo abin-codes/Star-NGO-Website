@@ -12,7 +12,7 @@ const programs = [
     title: 'Kaithangu',
     subtitle: 'Rehabilitation & Shelter',
     icon: Home,
-    description: 'Support for homelessness, family rejection, and crisis situations. We provide safe, inclusive emergency housing and long-term residential care with dignity and respect for all identities.',
+    description: 'This programme will support transgender persons facing homelessness, family rejection, or crisis situations. Temporary shelter support, referrals to safe housing, and rehabilitation assistance will be provided. STAR will also work with institutions and local authorities to ensure access to long-term housing options and reintegration support.',
     image: 'https://plus.unsplash.com/premium_photo-1723485693585-274b37b3c12e?q=80&w=1855&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Safe shelter space',
     stats: { beneficiaries: '150+', since: '2026' }
@@ -22,7 +22,7 @@ const programs = [
     title: 'Udyamam',
     subtitle: 'Skill Development & Livelihood',
     icon: TrendingUp,
-    description: 'Enabling economic independence through hospitality, technical trades, and entrepreneurship programs. We connect participants with market opportunities and provide ongoing mentorship.',
+    description: 'This is a livelihood and skill-development programme that enables transgender persons to achieve economic independence through diverse, vocational pathways. The programme supports training in areas such as hospitality, technical trades, digital services, entrepreneurship, and other emerging livelihood options aligned with individual aptitude and market demand. It promotes self-employment, wage employment, and micro-enterprises, while also facilitating financial literacy, access to government schemes, and long-term livelihood mentoring.',
     image: 'https://images.unsplash.com/photo-1551731409-43eb3e517a1a?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Vocational training session',
     stats: { beneficiaries: '200+', since: '2026' }
@@ -32,7 +32,7 @@ const programs = [
     title: 'Vidyamitram',
     subtitle: 'Continuing Education',
     icon: BookOpen,
-    description: 'Supporting enrollment in open schooling and literacy programmes. We facilitate access to formal and non-formal education pathways, removing barriers to learning for all ages.',
+    description: 'This programme supports transgender persons who wish to resume or continue their education. STAR will assist with enrolment in open schooling, literacy programmes, bridge courses, and vocational education. Academic guidance, mentoring, and follow-up support will be provided to reduce dropouts and encourage lifelong learning.',
     image: 'https://images.unsplash.com/photo-1573894998033-c0cef4ed722b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Education learning group',
     stats: { beneficiaries: '180+', since: '2026' }
@@ -42,7 +42,7 @@ const programs = [
     title: 'Sahachari',
     subtitle: 'Psycho-Social Support',
     icon: Heart,
-    description: 'Mental health counseling, peer mentoring, and trauma support services. Our trained professionals and peer supporters create safe spaces for healing and personal growth.',
+    description: 'Sahachari provides mental health and emotional support to transgender persons through counselling, peer mentoring, and group sessions. The programme addresses stress, identity-related challenges, social isolation, and trauma, promoting resilience, dignity, and holistic well-being.',
     image: 'https://plus.unsplash.com/premium_photo-1736961713735-d39d6e1516fa?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Counseling support session',
     stats: { beneficiaries: '250+', since: '2026' }
