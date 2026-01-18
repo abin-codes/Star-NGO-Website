@@ -4,10 +4,10 @@ import { Mail, Linkedin } from 'lucide-react';
 import ancyImg from '../../assets/members/ancy.png';
 import jomyImg from '../../assets/members/jomy.png';
 import emikiImg from '../../assets/members/emiki.png';
-//import ponImg from '../../assets/members/ponmadhini.jpg';
-//import mariaImg from '../../assets/members/maria.jpg';
+import ponmadhiniImg from '../../assets/members/ponmadhini.png';
+import mariaImg from '../../assets/members/maria.png';
 import sreyaImg from '../../assets/members/sreya.png';
-//import albertImg from '../../assets/members/albert.jpg';
+import albertImg from '../../assets/members/albert.png';
 import basilImg from '../../assets/members/basil.png';
 
 interface LeadershipPageProps {
@@ -37,13 +37,13 @@ export function LeadershipPage({ onNavigate }: LeadershipPageProps) {
     {
       name: 'Pon Madhini',
       role: ' Joint Secretary',
-      image: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400',
+      image: ponmadhiniImg,
       featured: false
     },
     {
       name: 'Maria',
       role: 'Treasurer',
-      image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400',
+      image: mariaImg,
       featured: false
     },
     {
@@ -55,7 +55,7 @@ export function LeadershipPage({ onNavigate }: LeadershipPageProps) {
     {
       name: 'Albert',
       role: 'Executive Member',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400',
+      image: albertImg,
       featured: false
     },
     {
