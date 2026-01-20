@@ -26,7 +26,7 @@ export function OurStoryPage() {
         >
           <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200 mb-8">
             <p className="text-xl text-gray-700 leading-relaxed mb-0" style={{ fontFamily: 'Roboto, sans-serif' }}>
-              Founded in 2026 in Ernakulam, Kerala, the Society for Transgender Affirmation and Recognition (STAR) emerged from a collective vision to create a world where every transgender individual can live with dignity, safety, and full recognition of their identity.
+              Founded in 2025 in Ernakulam, Kerala, the Society for Transgender Affirmation and Recognition (STAR) emerged from a collective vision to create a world where every transgender individual can live with dignity, safety, and full recognition of their identity.
             </p>
           </div>
 

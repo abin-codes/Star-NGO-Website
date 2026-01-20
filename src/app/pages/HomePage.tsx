@@ -1,6 +1,11 @@
 import { motion } from 'motion/react';
 import { Heart, Scale, TrendingUp, Shield, ArrowRight, Home, Users } from 'lucide-react';
 import starngologo from '../../assets/starngologo.png';
+import sdg3Image from '../../assets/sdg/sd3.png';
+import sdg4Image from '../../assets/sdg/sd4.png';
+import sdg5Image from '../../assets/sdg/sd5.png';
+import sdg8Image from '../../assets/sdg/sd8.png';
+import sdg10Image from '../../assets/sdg/sd10.png';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 interface HomePageProps {
@@ -482,7 +487,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-{/* SDG Alignment Section */}
+      {/* SDG Alignment Section */}
       <section className="py-24 px-6 bg-[#F8F9FA] relative overflow-hidden">
         {/* Background Wireframe Decorations */}
         <motion.div
@@ -536,27 +541,32 @@ export function HomePage({ onNavigate }: HomePageProps) {
               {
                 number: 3,
                 title: 'Good Health and Well-being',
-                offset: 'mt-0'
+                offset: 'mt-0',
+                image: sdg3Image
               },
               {
                 number: 4,
                 title: 'Quality Education',
-                offset: 'mt-8 md:mt-12'
+                offset: 'mt-8 md:mt-12',
+                image: sdg4Image
               },
               {
                 number: 5,
                 title: 'Gender Equality',
-                offset: 'mt-0 md:mt-4'
+                offset: 'mt-0 md:mt-4',
+                image: sdg5Image
               },
               {
                 number: 8,
                 title: 'Decent Work and Economic Growth',
-                offset: 'mt-8 md:mt-16'
+                offset: 'mt-8 md:mt-16',
+                image: sdg8Image
               },
               {
                 number: 10,
                 title: 'Reduced Inequalities',
-                offset: 'mt-0 md:mt-8'
+                offset: 'mt-0 md:mt-8',
+                image: sdg10Image
               }
             ].map((sdg, index) => (
               <motion.div
@@ -574,7 +584,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                     <div className="absolute inset-0 rounded-full border-2 border-[#C4A661]/0 group-hover:border-[#C4A661]/50 transition-all duration-300 transform group-hover:scale-110" />
                     <div className="relative w-full h-full rounded-full overflow-hidden shadow-md group-hover:shadow-lg group-hover:shadow-[#C4A661]/20 transition-all duration-300">
                       <ImageWithFallback
-                        src="https://images.unsplash.com/flagged/photo-1564397217561-2294a2dc007a?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src={sdg.image}
                         alt={`SDG ${sdg.number}`}
                         className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-300"
                       />

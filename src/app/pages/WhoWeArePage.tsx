@@ -109,7 +109,7 @@ export function WhoWeArePage({ onNavigate }: WhoWeArePageProps) {
           <h2 className="text-3xl font-black text-[#121212] mb-6">Our STORY</h2>
           <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
             <p>
-              <strong className="text-[#121212]">Society for Transgender Affirmation and Recognition (STAR)</strong> was established in 2026 in Ernakulam to address the challenges faced by transgender persons in accessing rights, dignity, and equal opportunities. Registered under the <strong className="text-[#121212]">Travancore Cochin Literary Scientific and Charitable Societies Registration Act.1955</strong>, STAR was born from collective dialogue among community members, allies, and social work practitioners who recognized the need for a structured, community-led platform. The society provides a safe and empowering space where transgender persons are both beneficiaries and active participants in shaping solutions for their well-being and social inclusion.
+              <strong className="text-[#121212]">Society for Transgender Affirmation and Recognition (STAR)</strong> was established in 2025 in Ernakulam to address the challenges faced by transgender persons in accessing rights, dignity, and equal opportunities. STAR was born from collective dialogue among community members, allies, and social work practitioners who recognized the need for a structured, community-led platform. The society provides a safe and empowering space where transgender persons are both beneficiaries and active participants in shaping solutions for their well-being and social inclusion.
             </p>
           </div>
           <br></br>
