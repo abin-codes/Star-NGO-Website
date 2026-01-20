@@ -481,6 +481,131 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </motion.div>
         </div>
       </section>
+
+{/* SDG Alignment Section */}
+      <section className="py-24 px-6 bg-[#F8F9FA] relative overflow-hidden">
+        {/* Background Wireframe Decorations */}
+        <motion.div
+          animate={{
+            y: [0, -20, 0],
+            rotate: [0, 5, 0]
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-20 left-10 w-40 h-40 border-2 border-[#C4A661]/20 rounded-3xl transform rotate-12 pointer-events-none"
+        />
+        <motion.div
+          animate={{
+            y: [0, 15, 0],
+            rotate: [0, -3, 0]
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute bottom-20 right-10 w-32 h-32 border-2 border-gray-300/30 rounded-2xl transform -rotate-6 pointer-events-none"
+        />
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <div className="inline-block px-4 py-2 bg-[#C4A661]/10 rounded-full mb-4">
+              <span className="text-sm font-bold text-[#C4A661] tracking-wider uppercase">
+                United Nations Sustainable Development Goals
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black text-[#121212] mb-4">
+              Our Programs Align With
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Contributing to global goals for a more equitable and sustainable future
+            </p>
+          </motion.div>
+
+          {/* Masonry Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-start">
+            {[
+              {
+                number: 3,
+                title: 'Good Health and Well-being',
+                offset: 'mt-0'
+              },
+              {
+                number: 4,
+                title: 'Quality Education',
+                offset: 'mt-8 md:mt-12'
+              },
+              {
+                number: 5,
+                title: 'Gender Equality',
+                offset: 'mt-0 md:mt-4'
+              },
+              {
+                number: 8,
+                title: 'Decent Work and Economic Growth',
+                offset: 'mt-8 md:mt-16'
+              },
+              {
+                number: 10,
+                title: 'Reduced Inequalities',
+                offset: 'mt-0 md:mt-8'
+              }
+            ].map((sdg, index) => (
+              <motion.div
+                key={sdg.number}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.15, duration: 0.5 }}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className={`${sdg.offset} group cursor-pointer`}
+              >
+                <div className="relative bg-white/70 backdrop-blur-lg rounded-2xl p-6 shadow-lg border border-white/50 hover:shadow-2xl hover:shadow-[#C4A661]/10 transition-all duration-300">
+                  {/* Circular Thumbnail */}
+                  <div className="relative mx-auto mb-5 w-20 h-20">
+                    <div className="absolute inset-0 rounded-full border-2 border-[#C4A661]/0 group-hover:border-[#C4A661]/50 transition-all duration-300 transform group-hover:scale-110" />
+                    <div className="relative w-full h-full rounded-full overflow-hidden shadow-md group-hover:shadow-lg group-hover:shadow-[#C4A661]/20 transition-all duration-300">
+                      <ImageWithFallback
+                        src="https://images.unsplash.com/flagged/photo-1564397217561-2294a2dc007a?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt={`SDG ${sdg.number}`}
+                        className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* SDG Number Badge */}
+                  <div className="absolute -top-3 -right-3 w-10 h-10 bg-[#C4A661] rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span className="text-white font-black text-sm">{sdg.number}</span>
+                  </div>
+
+                  {/* Title */}
+                  <div className="text-center">
+                    <p className="text-xs font-bold text-[#C4A661] mb-1 tracking-wider">
+                      SDG {sdg.number}
+                    </p>
+                    <h3 className="text-sm font-bold text-[#121212] leading-snug">
+                      {sdg.title}
+                    </h3>
+                  </div>
+
+                  {/* Hover Wireframe Border */}
+                  <div className="absolute inset-0 border-2 border-[#C4A661]/0 group-hover:border-[#C4A661]/20 rounded-2xl transition-all duration-300" />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+    
+
     </div>
   );
 }
